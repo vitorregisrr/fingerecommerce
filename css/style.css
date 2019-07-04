@@ -910,80 +910,46 @@ textarea.form-control {
 }
 
 .main-footer {
-  padding: 60px 0 20px;
-  background-color: #07532a;
-  letter-spacing: 1px;
-  color: #fffff5;
+  height: auto;
+  color: #e1e1e1;
 }
 
-.main-footer b {
-  font-size: 17px;
+.main-footer a {
+  color: #e1e1e1;
 }
 
 .main-footer__title {
-  font-family: 'Myriad Pro Semibold', sans-serif;
-  color: #e4af3d;
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: .8px;
   text-transform: uppercase;
-  margin-bottom: 0;
-  margin-right: 10px;
 }
 
-.main-footer__subtitle {
-  font-size: 17px;
-  margin: 20px 0;
+.main-footer__info {
+  padding: 40px 0;
+  background-color: black;
 }
 
-@media screen and (min-width: 768px) {
-  .main-footer .brand-col {
-    padding: 30px 50px 66px 0;
-  }
-}
-
-.main-footer__brand {
-  position: relative;
+.main-footer__info__newsletter {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  border-right: 1px solid #fff;
+  flex-direction: column;
+  padding: 20px 0;
+  margin-bottom: 120px;
 }
 
-@media screen and (max-width: 768px) {
-  .main-footer__brand {
-    justify-content: flex-start;
-    border: none;
+@media screen and (max-width: 992px) {
+  .main-footer__info__newsletter {
+    margin-bottom: 80px;
   }
 }
 
-.main-footer__brand img {
-  width: 70%;
-}
-
-@media screen and (max-width: 768px) {
-  .main-footer__brand img {
-    width: 150px;
-    margin-bottom: 30px;
-  }
-}
-
-.main-footer__data {
-  margin-bottom: 40px;
-}
-
-.main-footer__data ul {
-  margin-bottom: 30px;
-}
-
-.main-footer__data__medias {
-  margin-top: 60px;
-}
-
-.main-footer__data__medias__item {
-  font-size: 23px;
-  color: #fff;
-  margin: 0 8px;
+.main-footer__info__newsletter__privacy {
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: lighter;
+  letter-spacing: .4px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -991,24 +957,181 @@ textarea.form-control {
   transition: all 0.3s ease-in-out;
 }
 
-.main-footer__data__medias__item:hover {
-  color: #ecebeb;
+.main-footer__info__newsletter__privacy:hover {
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  transform: scale(1.01);
 }
 
-.main-footer__contact__submit {
-  color: #e4af3d;
-  font-size: 15px;
-  font-family: 'Myriad Pro Bold', sans-serif;
+.main-footer__info__newsletter__form {
+  width: 60%;
+  position: relative;
+}
+
+@media screen and (max-width: 992px) {
+  .main-footer__info__newsletter__form {
+    width: 90%;
+  }
+}
+
+.main-footer__info__newsletter__form button {
+  position: absolute;
+  right: -5px;
+  top: 0px;
+  background: none;
+  border: none;
+  color: #e1e1e1;
+  font-weight: lighter;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  padding: 0;
-  margin-top: 20px;
+  font-size: 14px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-footer__info__newsletter__form button:hover {
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+.main-footer__info__newsletter__form button i {
+  font-size: 10px;
+}
+
+.main-footer__info__newsletter__form input {
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid #e1e1e1;
+  background-color: transparent;
+  padding-bottom: 10px;
+  font-weight: lighter;
+  color: #e1e1e1;
+}
+
+.main-footer__info__newsletter__form input::placeholder {
+  color: #e1e1e1;
+}
+
+.main-footer__info__newsletter__form input:focus {
+  outline: none;
+}
+
+.main-footer__info__links__brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .main-footer__info__links__brand {
+    margin-bottom: 80px;
+  }
+}
+
+.main-footer__info__links__brand img {
+  width: 60%;
+  object-fit: contain;
+}
+
+.main-footer__info__links__list {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.main-footer__info__links__list li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.main-footer__info__links__list a {
+  color: #e1e1e1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-footer__info__links__list a:hover {
+  color: #cfcfcf;
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+.main-footer__info__links__social {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+}
+
+.main-footer__info__links__social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #e1e1e1;
+  color: #e1e1e1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-footer__info__links__social__item i {
+  font-size: 15px;
+}
+
+.main-footer__info__links__social__item:hover {
+  background-color: #e1e1e1;
+  color: black;
+}
+
+.main-footer__copyright {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.main-footer__copyright .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .main-footer__copyright .container-fluid {
+    flex-direction: column;
+  }
+}
+
+.main-footer__copyright img {
+  width: 170px;
+}
+
+.main-footer__copyright p {
+  margin-bottom: 0;
+  font-weight: 600;
+  color: black;
+  font-size: 14px;
 }
 
 body {
   position: relative;
   margin: 0;
   background-color: white;
-  font-family: 'Myriad Pro Regular', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;

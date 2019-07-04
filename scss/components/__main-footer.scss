@@ -1,84 +1,186 @@
 .main-footer {
-    padding: 60px 0 20px;
-    background-color: $color-primary;
-    letter-spacing: 1px;
-    color: hsl(60, 100%, 98%);
+    $footer-color: #e1e1e1;
+    height: auto;
+    color: $footer-color;
 
-    b {
-        font-size: 17px;
+    a {
+        color: $footer-color;
     }
 
     &__title {
-        font-family: 'Myriad Pro Semibold', sans-serif;
-        color: $color-secondary;
-        font-size: 22px;
-        font-weight: 500;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: .8px;
         text-transform: uppercase;
-        margin-bottom: 0;
-        margin-right: 10px;
     }
 
-    &__subtitle {
-        font-size: 17px;
-        margin: 20px 0;
-    }
-    @media screen and (min-width: 768px) {
-        .brand-col {
-            padding: 30px 50px 66px 0;
-        }
-    }
+    &__info {
+        padding: 40px 0;
+        background-color: black;
 
-    &__brand {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        border-right: 1px solid #fff;
-        @media screen and (max-width: 768px) {
-            justify-content: flex-start;
-            border: none;
-        }
+        &__newsletter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px 0;
+            margin-bottom: 120px;
 
-        img {
-            width: 70%;
-            @media screen and (max-width: 768px) {
-                width: 150px;
-                margin-bottom: 30px;
+            @media screen and (max-width: $bp-LG) {
+                margin-bottom: 80px;
+            }
+
+            &__privacy {
+                margin-top: 30px;
+                font-size: 14px;
+                font-weight: lighter;
+                letter-spacing: .4px;
+                @include transition();
+
+                &:hover {
+                    @include scale(1.01);
+                }
+            }
+
+            &__form {
+                width: 60%;
+                position: relative;
+
+                @media screen and (max-width: $bp-LG) {
+                    width: 90%;
+                }
+
+                button {
+                    position: absolute;
+                    right: -5px;
+                    top: 0px;
+                    background: none;
+                    border: none;
+                    color: $footer-color;
+                    font-weight: lighter;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    @include transition();
+
+                    &:hover {
+                        @include scale(1.01);
+                    }
+
+                    i {
+                        font-size: 10px;
+                    }
+                }
+
+                input {
+                    width: 100%;
+                    border: none;
+                    border-bottom: 1.5px solid $footer-color;
+                    background-color: transparent;
+                    padding-bottom: 10px;
+                    font-weight: lighter;
+                    color: $footer-color;
+
+                    &::placeholder {
+                        color: $footer-color;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
             }
         }
-    }
 
-    &__data {
-        margin-bottom: 40px;
-        ul {
-            margin-bottom: 30px;
-        }
+        &__links {
+            &__brand {
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-        &__medias {
-            margin-top: 60px;
+                @media screen and (max-width: $bp-LG) {
+                    margin-bottom: 80px;
+                }
 
-            &__item {
-                font-size: 23px;
-                color: #fff;
-                margin: 0 8px;
-                @include transition();
-                &:hover {
-                    color: rgb(236, 235, 235);
+                img{
+                    width: 60%;
+                    object-fit: contain;
+                }
+            }
+
+            &__list {
+                font-size: 13px;
+                margin-bottom: 20px;
+
+                li{
+                    &:not(:last-child){
+                        margin-bottom: 5px;
+                    }
+                }
+                a{
+                    color: $footer-color;
+                    @include transition();
+
+                    &:hover {
+                        color: #cfcfcf;
+                        @include scale(1.01);
+                    }
+                }
+            }
+
+            &__social {
+                display: flex;
+                justify-content: space-between;
+                width: 130px;
+
+                &__item {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    border: 1px solid $footer-color;
+                    color: $footer-color;
+                    @include transition();
+
+                    i {
+                        font-size: 15px;
+                    }
+
+                    &:hover {
+                        background-color: $footer-color;
+                        color: black;
+                    }
                 }
             }
         }
     }
 
-    &__contact {
+    &__copyright{
+        padding: 15px;
 
-        &__submit {
-            color: $color-secondary;
-            font-size: 15px;
-            font-family: 'Myriad Pro Bold', sans-serif;
-            text-transform: uppercase;
-            padding: 0;
-            margin-top: 20px;
+        .container-fluid{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            @media screen and (max-width: $bp-MD){
+                flex-direction: column;
+            }
         }
+
+        img{
+            width: 170px;
+        }
+
+        p{
+            margin-bottom: 0;
+            font-weight: 600;
+            color: black;
+            font-size: 14px;
+        }
+
+        background-color: #fff;
     }
 }
