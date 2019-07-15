@@ -12,6 +12,10 @@
         font-weight: 600;
         letter-spacing: .8px;
         text-transform: uppercase;
+
+        @media screen and (max-width: $bp-LG) {
+            text-align: center;
+        }
     }
 
     &__info {
@@ -102,7 +106,7 @@
                     margin-bottom: 80px;
                 }
 
-                img{
+                img {
                     width: 60%;
                     object-fit: contain;
                 }
@@ -112,12 +116,18 @@
                 font-size: 13px;
                 margin-bottom: 20px;
 
-                li{
-                    &:not(:last-child){
+                @media screen and (max-width: $bp-LG) {
+                    text-align: center;
+                }
+
+
+                li {
+                    &:not(:last-child) {
                         margin-bottom: 5px;
                     }
                 }
-                a{
+
+                a {
                     color: $footer-color;
                     @include transition();
 
@@ -132,6 +142,18 @@
                 display: flex;
                 justify-content: space-between;
                 width: 130px;
+
+
+                @media screen and (max-width: $bp-LG) {
+                    width: 100%;
+                    justify-content: center;
+
+                    li {
+                        &:not(:last-child) {
+                            margin-right: 15px;
+                        }
+                    }
+                }
 
                 &__item {
                     display: flex;
@@ -157,24 +179,24 @@
         }
     }
 
-    &__copyright{
+    &__copyright {
         padding: 15px;
 
-        .container-fluid{
+        .container-fluid {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
-            @media screen and (max-width: $bp-MD){
+
+            @media screen and (max-width: $bp-MD) {
                 flex-direction: column;
             }
         }
 
-        img{
+        img {
             width: 170px;
         }
 
-        p{
+        p {
             margin-bottom: 0;
             font-weight: 600;
             color: black;

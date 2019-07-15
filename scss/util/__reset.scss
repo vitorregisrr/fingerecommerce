@@ -1,31 +1,40 @@
-a:visited, a:link, a:hover, a:active{
+a {
     text-decoration: none;
+    color: black;
+    @include transition();
+
+    &:hover {
+        text-decoration: none;
+        color: $color-secondary;
+    }
 }
 
-a{
-    text-decoration: underline;
-}
-
-ul{
+ul {
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-weight: lighter;
 
-    li{
+    li {
         display: block;
         padding: 2px 0;
     }
 }
 
-button, a[role="button"]{
+button,
+a[role="button"] {
     cursor: pointer !important;
 }
 
-b{
+b {
     font-weight: bold;
 }
 
 .lity {
     background-color: rgba(1, 20, 9, 0.938);
+}
+
+button:focus,
+input:focus {
+    outline: none;
 }

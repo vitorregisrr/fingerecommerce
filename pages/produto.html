@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- partial:../partials/__head.html -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Finger</title>
+  <link rel="icon" href="/images/ico/favicon.png" />
+
+  <!-- Load META-TAGS for SEO -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="" />
+  <META NAME="Googlebot" CONTENT="index,follow">
+  <META NAME="robots" CONTENT="index,follow">
+  <META NAME="Identifier-URL" CONTENT="http://www.">
+  <META NAME="url" CONTENT="http://www.">
+  <META NAME="Language" CONTENT="PT-BR">
+  <META NAME="content-language" CONTENT="pt-br">
+  <META NAME="distribution" CONTENT="Global">
+  <META NAME="coverage" CONTENT="Worldwide">
+  <META NAME="Author" CONTENT="Sorocabacom.com">
+  <META NAME="Generator" CONTENT="">
+  <meta name="description" content="" />
+
+  <!-- Load META-TAGS for SOCIAL MEDIAS -->
+  <meta property="og:title" content="Title">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="http://www.">
+  <meta property="og:url" content="http://www.">
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:site_name" content="dom.com.br">
+  <meta name="twitter:image:alt" content="Title">
+  <meta property="fb:app_id" content="_app_id" />
+  <meta name="twitter:site" content="@app">
+
+  <!-- Load Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor JS -->
+  <script src="../vendors/js/vendor.bundle.base.js" defer></script>
+
+  <!-- Custom JS -->
+  <script src="../js/main.js" defer></script>
+  <script src="../js/carousels.js" defer></script>
+  <script src="../js/responsivenav.js" defer></script>
+  <script src="../js/inputmasks.js" defer></script>
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- partial -->
+</head>
+
+<body class=" wow fadeIn">
+  <!-- partial:../partials/__main-header.html -->
+
+  <header id="main-header" class="main-header">
+    <div class="main-header__announ wow fadeInDown">
+      <div class="container">
+        <h5 class="main-header__announ__text wow fadeIn">Frete com 50% de desconto em compras acima de R$ 150,00
+        </h5>
+        <h5 class="main-header__announ__text wow fadeIn">Frete grátis nas compras acima de R$ 300,00 </h5>
+      </div>
+    </div>
+    <div class="main-header__tools">
+      <div class="container-fluid">
+        <div class="main-header__tools__search wow fadeInLeft">
+          <form action="" class="main-header__tools__search__content">
+            <input type="text" name="search" placeholder="Buscar" autocomplete="off">
+            <button type="submit"></button>
+          </form>
+        </div>
+
+        <div class="main-header__tools__brand wow fadeInDown">
+          <a href="./index.html">
+            <img src="../images/brands/finger.png" alt="Logo Finger">
+          </a>
+        </div>
+
+        <div class="main-header__tools__icons wow fadeInRight">
+          <a class="main-header__tools__icons__item">
+            <span class="ico ico--heart" aria-hidden="true"></span>
+          </a>
+          <button id="toggleChartBtn" class="main-header__tools__icons__item chart">
+            <span class="ico ico--shopping-bag"></span>
+            <span class="number">5</span>
+          </button>
+          <a class="main-header__tools__icons__item">
+            <span class="ico ico--user" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <nav id="main-nav" class="main-header__nav main-nav">
+      <div class="container">
+        <ul class="main-nav__list">
+          <li class="main-nav__list__item warning"><a href="./ofertas.html">Ofertas</a></li>
+          <li class="main-nav__list__item "><a href="./novidades.html">Novidades</a></li>
+          <li class="main-nav__list__item "><a href="./produtos.html">Produtos</a></li>
+          <li class="main-nav__list__item "><a href="./masculino.html">Masculino</a></li>
+          <li class="main-nav__list__item "><a href="./nossaspecas.html">Nossas peças</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <header id="header-mobile" class="mobile-header">
+    <div class="mobile-header__header">
+      <div class="container">
+        <div class="mobile-header__header__toggler">
+          <button id="mobile-menu-toggler" class="mobile-header__header__toggler__button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <div class="mobile-header__header__brand">
+          <a href="./index.html">
+            <img src="../images/brands/finger.png" alt="Logo Finger">
+          </a>
+        </div>
+
+        <div class="mobile-header__header__search">
+          <button id="mobile-search-toggler" class="mobile-header__header__search__button">
+            <span class="ico ico--search"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-header__menu">
+      <ul class="mobile-header__menu__list">
+        <li class="dropdown">
+          <a id="mobile-header-collapse1" class="mobile-header__menu__list__item" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="ico ico--tshirt"></span> Roupas
+          </a>
+          <div class="dropdown-menu" aria-labelledby="mobile-header-collapse1">
+            <a class="dropdown-item" href="./item1.html"> <span class="ico"></span> Item 1</a>
+            <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Item 2</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <a id="mobile-header-collapse2" class="mobile-header__menu__list__item" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="ico ico--jewel"></span> Semijoias
+          </a>
+          <div class="dropdown-menu" aria-labelledby="mobile-header-collapse2">
+            <a class="dropdown-item" href="./item1.html"> <span class="ico"></span> Ofertas</a>
+            <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Novidades</a>
+            <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Produtos</a>
+
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <a id="mobile-header-collapse3" class="mobile-header__menu__list__item" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="ico ico--dots"></span> Outros
+          </a>
+          <div class="dropdown-menu" aria-labelledby="mobile-header-collapse3">
+            <a class="dropdown-item" href="./item1.html"> <span class="ico"></span> Sobre nós</a>
+            <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Nossas peças</a>
+            <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Formas de pagamento</a>
+            <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Garantia</a>
+            <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Devolução e troca</a>
+            <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Perguntas frequentes</a>
+            <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Fale conosco</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div id="mobile-search" class="mobile-header__search">
+      <input class="mobile-header__search__input" type="text" placeholder="Buscar...">
+
+      </input>
+      <div class="mobile-header__search__termos">
+        <h3 class="mobile-header__search__termos__title">Termos mais buscados</h3>
+        <ul>
+          <li>
+            <a href="" class="mobile-header__search__termos__item">
+              <span>1</span> Pingente
+            </a>
+          </li>
+
+          <li>
+            <a href="" class="mobile-header__search__termos__item">
+              <span>2</span> Anel
+            </a>
+          </li>
+
+          <li>
+            <a href="" class="mobile-header__search__termos__item">
+              <span>3</span> Pulseira
+            </a>
+          </li>
+
+          <li>
+            <a href="" class="mobile-header__search__termos__item">
+              <span>4</span> Brinco
+            </a>
+          </li>
+
+          <li>
+            <a href="" class="mobile-header__search__termos__item">
+              <span>5</span> Pingente Life
+            </a>
+          </li>
+
+          <li>
+            <a href="" class="mobile-header__search__termos__item">
+              <span>6</span> Pulseira Life
+            </a>
+          </li>
+
+          <li>
+            <a href="" class="mobile-header__search__termos__item">
+              <span>7</span> Pérolas
+            </a>
+          </li>
+
+          <li>
+            <a href="" class="mobile-header__search__termos__item">
+              <span>8</span> Relógio
+            </a>
+          </li>
+
+          <li>
+            <a href="" class="mobile-header__search__termos__item">
+              <span>9</span> Aneis
+            </a>
+          </li>
+
+          <li>
+            <a href="" class="mobile-header__search__termos__item">
+              <span>10</span> Rose
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- partial -->
+
+  <main>
+    <section id="produto" class="mb-5 py-2 py-lg-4 px-3 p">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="product-slider d-none d-lg-flex">
+              <div class="product-slider__preview">
+                <button class="product-slider__preview__item active"
+                  data-image="../images/produtos/pardebrincoscomdiamantes.png">
+                  <img src="../images/produtos/pardebrincoscomdiamantes.png" alt="">
+                </button>
+
+                <button class="product-slider__preview__item" data-image="../images/produtos/pingentedeouroredondo.png">
+                  <img src="../images/produtos/pingentedeouroredondo.png" alt="">
+                </button>
+
+                <button class="product-slider__preview__item" data-image="../images/produtos/pontodeluzdeouro.png">
+                  <img src="../images/produtos/pontodeluzdeouro.png" alt="">
+                </button>
+              </div>
+              <div class="product-slider__selected">
+                <img src="../images/produtos/pardebrincoscomdiamantes.png" alt="">
+              </div>
+            </div>
+
+            <div class="produto__slider-mobile d-block d-lg-none">
+              <div class="owl-carousel owl-theme produto__slider-mobile__carousel nav-center">
+                <div class="item">
+                  <img src="../images/produtos/pardebrincoscomdiamantes.png" alt="">
+                </div>
+
+                <div class="item">
+                  <img src="../images/produtos/pingentedeouroredondo.png" alt="">
+                </div>
+
+                <div class="item">
+                  <img src="../images/produtos/pardebrincoscomdiamantes.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <form class="produto__info">
+              <h2 class="produto__info__name">Anel Solitário de Ouro com Topázio Azul redondo</h2>
+              <div class="produto__info__price">
+                <span class="color-gray-100 text-over mr-3"><del>R$ 2.500,00</del></span>
+                <span class="font-weight-bold  mr-3">
+                  R$ 750,00
+                  <span class="color-secondary font-weight-normal">(30%
+                    OFF)</span>
+                </span>
+                <span class="color-gray-200 text-over mr-2">10x de R$ 75,00</span>
+              </div>
+
+              <div class="produto__info__rating mt-2">
+                <select name="" id="" class="stars-rating--readonly">
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                  <option value="5"></option>
+                </select>
+              </div>
+
+              <a href="#" class="produto__info__desejos">
+                <i class="fa fa-heart-o mr-1" aria-hidden="true"></i> Adicionar a lista de desejos
+              </a>
+              <!-- Ou se já estiver nos desejos:
+                 <a href="#" class="produto__info__desejos">
+                <i class="fa fa-heart mr-1" aria-hidden="true"></i> Salvo nos seus desejos
+              </a>
+              -->
+
+              <span class="font-weight-bold d-block mt-3">Cor:
+                <span class="color-gray-200 font-weight-normal">
+                  <!-- Cor selecionada -->
+                  <small>Dourado e Azul</small>
+                </span>
+              </span>
+
+              <div class="produto__info__cores d-flex py-1">
+                <label class="radio-color">
+                  <input type="radio" name="cor">
+                  <div class="mask">
+                    <span style="background-color: #F4DD9B"></span>
+                  </div>
+                  </a>
+                </label>
+
+                <label class="radio-color">
+                  <input type="radio" name="cor">
+                  <div class="mask">
+                    <span style="background-color: rgb(244, 155, 155)"></span>
+                  </div>
+                  </a>
+                </label>
+              </div>
+
+              <span class="font-weight-bold d-block mt-1 mb-1">Tamanho:</span>
+              <select name="tamanho" id="" class="form-control">
+                <option value="">Aro 12</option>
+              </select>
+              <button type="submit" class="btn btn-primary text-uppercase w-100 mt-4 mb-3">Comprar</button>
+
+            </form>
+            <div class="d-flex justify-content-between px-2 mb-3">
+              <small><span class="font-weight-bold">Compartilhar</span></small>
+              <div>
+                <a href="" class="mr-2"> <i class="fa fa-whatsapp" aria-hidden="true"></i> </a>
+                <a href="" class="mr-2"> <i class="fa fa-facebook" aria-hidden="true"></i> </a>
+                <a href="" class="mr-2"> <i class="fa fa-twitter" aria-hidden="true"></i> </a>
+                <a href="" class="mr-2"> <i class="fa fa-envelope" aria-hidden="true"></i> </a>
+              </div>
+            </div>
+            <div id="infoAccordion" class="mb-3 px-2">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                      aria-controls="collapseOne">
+                      Descrição e Detalhes
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#infoAccordion">
+                  <div class=" card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                    nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                      aria-controls="collapseTwo">
+                      Tamanho e Medidas
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#infoAccordion">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                    nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                      aria-controls="collapseThree">
+                      Frete e Devolução
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#infoAccordion">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                    nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center produto__rating py-5">
+          <div class="col-10 col-lg-5">
+            <div class="inner-title">Avaliações</div>
+            <div class="row py-3 my-3 pt-4">
+              <div class="col-md-6 d-flex align-items-start flex-column" style="border-right: 1px solid #e2e2e2">
+                <select name="" id="" class="stars-rating--readonly spaced">
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                  <option value="5"></option>
+                </select>
+                <small><span class="d-block color-gray-200 mr-2">20 avaliações</span></small>
+              </div>
+
+              <div class="col-md-6 d-flex align-items-start align-items-md-end flex-column mt-4 mt-md-0">
+                <div class="mb-2">
+                  <select name="" id="" class="stars-rating--readonly">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                  </select>
+                  <small><span class="color-gray-200">(1)</span></small>
+                </div>
+
+                <div class="mb-2">
+                  <select name="" id="" class="stars-rating--readonly">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                  </select>
+                  <small><span class="color-gray-200">(1)</span></small>
+                </div>
+
+                <div class="mb-2">
+                  <select name="" id="" class="stars-rating--readonly">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                  </select>
+                  <small><span class="color-gray-200">(1)</span></small>
+                </div>
+
+                <div class="mb-2">
+                  <select name="" id="" class="stars-rating--readonly">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                  </select>
+                  <small><span class="color-gray-200">(1)</span></small>
+                </div>
+
+                <div class="mb-2">
+                  <select name="" id="" class="stars-rating--readonly">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                  </select>
+                  <small><span class="color-gray-200">(1)</span></small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 mb-3 mb-lg-0 px-4">
+            <a role="button" href="#" class="w-100 btn btn-primary--outline py-4"> <span
+                class="font-weight-bold mr-3">%</span> Parcele sem juros</a>
+          </div>
+
+          <div class="col-lg-4 mb-3 mb-lg-0 px-4">
+            <a role="button" href="#" class="w-100 btn btn-primary--outline py-4"> <span
+                class="font-weight-bold mr-3">%</span> Nossa política de garantia</a>
+          </div>
+
+          <div class="col-lg-4 px-4">
+            <a role="button" href="#" class="w-100 btn btn-primary--outline py-4"> <span
+                class="font-weight-bold mr-3">%</span> Política de devolução e troca</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="similares" class="mb-5 pb-5 px-3">
+      <div class="container-fluid">
+        <h2 class="inner-title mb-5 wow fadeInUp">Você também vai gostar</h2>
+        <div class="row">
+
+          <div class="col-6 col-md-6 col-lg-3 wow fadeInUp">
+            <article class="produto">
+              <a href="">
+                <div class="produto__img">
+                  <img src="../images/produtos/anelourobranco.png" alt="">
+                </div>
+              </a>
+              <div class="produto__caption">
+                <h3 class="produto__caption__name">Anel de Ouro Branco</h3>
+                <div class="produto__caption__price">
+                  <span class="produto__caption__price__total  font-weight-bold">R$ 11.490,00</span>
+                  <span class="produto__caption__price__parcels color-light">10x R$ 1.034,00</span>
+                </div>
+            </article>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-3 wow fadeInUp">
+            <article class="produto">
+              <a href="">
+                <div class="produto__img">
+                  <img src="../images/produtos/brincosouro.png" alt="">
+                </div>
+              </a>
+              <div class="produto__caption">
+                <h3 class="produto__caption__name">Par de Brincos de Ouro</h3>
+                <div class="produto__caption__price">
+                  <span class="produto__caption__price__total  font-weight-bold">R$ 2.090,00</span>
+                  <span class="produto__caption__price__parcels color-light">10x R$ 177,65</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-3 wow fadeInUp">
+            <article class="produto">
+              <a href="">
+                <div class="produto__img">
+                  <img src="../images/produtos/anelouro32d.png" alt="">
+                </div>
+              </a>
+              <div class="produto__caption">
+                <h3 class="produto__caption__name">Anel de Ouro com 32 D</h3>
+                <div class="produto__caption__price">
+                  <span class="produto__caption__price__total  font-weight-bold">R$ 3.190,00</span>
+                  <span class="produto__caption__price__parcels color-light">10x R$ 287,10</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-3 wow fadeInUp">
+            <article class="produto">
+              <a href="">
+                <div class="produto__img">
+                  <img src="../images/produtos/anelouro32d.png" alt="">
+                </div>
+              </a>
+              <div class="produto__caption">
+                <h3 class="produto__caption__name">Pulseira de ouro</h3>
+                <div class="produto__caption__price">
+                  <span class="produto__caption__price__total font-weight-bold">R$ 4.311,00</span>
+                  <span class="produto__caption__price__parcels color-light">10x R$ 479,00</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- partial:../partials/__main-footer.html -->
+
+  <footer id="main-footer" class="main-footer">
+    <div class="main-footer__info">
+      <div class="container">
+        <div class="main-footer__info__newsletter">
+          <h3 class="main-footer__title mb-5  wow fadeInUp">
+            Newsletter
+          </h3>
+
+          <form action="" class="main-footer__info__newsletter__form  wow fadeInUp">
+            <input type="text" placeholder="Cadastre seu e-mail">
+            <button type="submit">Assinar <i class="ml-4 fa fa-chevron-right" aria-hidden="true"></i></button>
+          </form>
+          <a href="./politicaprivacidade.html" class="main-footer__info__newsletter__privacy wow faedInUp">Consulte
+            nossa
+            Politíca de Privacidade</a>
+        </div>
+
+        <div class="main-footer__info__links">
+          <div class="row">
+            <div class="col-lg-4 main-footer__info__links__brand wow fadeInUp">
+              <img src="../images/brands/finger-white.png" alt="">
+            </div>
+
+            <div class="col-lg-3 col-sm-4">
+              <h4 class="main-footer__title wow fadeInUp mb-4">
+                Navegação
+              </h4>
+              <div class="row">
+                <div class="col-6 col-md-6">
+                  <ul class="main-footer__info__links__list wow fadeInUp">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Produtos</a></li>
+                    <li><a href="">Novidades</a></li>
+                    <li><a href="">Masculino</a></li>
+                    <li><a href="">Nossas peças</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md-6">
+                  <ul class="main-footer__info__links__list wow fadeInUp">
+                    <li><a href="">Acessórios</a></li>
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Carrinho</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-sm-4">
+              <h4 class="main-footer__title wow fadeInUp mb-4">
+                Ajuda
+              </h4>
+              <ul class="main-footer__info__links__list wow fadeInUp">
+                <li><a href="">Formas de Pagamento</a></li>
+                <li><a href="">Garantia</a></li>
+                <li><a href="">Devolução e Troca</a></li>
+                <li><a href="">Perguntas Frequentes</a></li>
+                <li><a href="">Fale Conosco</a></li>
+              </ul>
+            </div>
+
+
+            <div class="col-lg-3 col-sm-4">
+              <h4 class="main-footer__title wow fadeInUp mb-4">
+                Fique por dentro
+              </h4>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="main-footer__info__links__social wow fadeInUp">
+                    <li><a class="main-footer__info__links__social__item " href=""><i class="fa fa-facebook-f"></i></a>
+                    </li>
+                    <li><a class="main-footer__info__links__social__item " href=""><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li><a class="main-footer__info__links__social__item " href=""><i class="fa fa-twitter"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-footer__copyright">
+      <div class="container-fluid">
+        <p class="wow fadeInUp">©2018 Skiny, Todos os direitos reservados</p>
+        <img class="wow fadeInUp" src="../images/brands/sorocabacom.png" alt="Logo Sorocabacom">
+      </div>
+    </div>
+  </footer>
+
+  <!-- partial -->
+  <button class="scroll-top"></button>
+</body>
+
+</html>

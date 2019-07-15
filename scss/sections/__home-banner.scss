@@ -1,0 +1,55 @@
+.home-banner {
+    position: relative;
+
+    &__carousel {
+
+        .owl-dots{
+            position: absolute;
+            bottom: -10px;
+            transform: translateX(50%);
+            right: 50%;
+        }
+
+        &__item {
+            width: 100vw;
+            height: 400px;
+            padding: 100px 50px;
+            background-position: 30%;
+
+            @media screen and (max-width: $bp-MD){
+                padding: 40px 20px;
+                height: 300px;
+            }
+
+            .container {
+                height: 100%;
+            }
+
+            &__caption {
+                display: flex;
+                align-items: center;
+                max-width: 450px;
+                height: 100%;
+
+                @media screen and (max-width: $bp-LG) {
+                    max-width: 100%;
+                }
+
+                &__title {
+                    font-size: 40px;
+                    text-transform: uppercase;
+                    color: #fff;
+                    letter-spacing: -0.5px;
+                    font-weight: 600;
+                    line-height: 1.3;
+
+                    @media screen and (max-width: $bp-MD){
+                        text-align: left;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+
+    }
+}

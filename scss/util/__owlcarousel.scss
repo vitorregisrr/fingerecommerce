@@ -109,15 +109,15 @@
         padding: 40px 0;
 
         .owl-dot {
-            width: 12px;
-            height: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.699);
+            width: 10px;
+            height: 10px;
+            border: 2px solid #fff;
             border-radius: 50%;
-            margin-right: 10px;
+            margin-right: 3px;
             cursor: pointer;
 
             &.active {
-                background-color: #b57b30;
+                background-color: #fff;
             }
 
             &:focus,

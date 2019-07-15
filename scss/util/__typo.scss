@@ -1,0 +1,68 @@
+.chevron-right {
+    height: 100% !important;
+    width: 100% !important;
+    background-image: url(../images/ico/chevron-right.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.chevron-left {
+    height: 100% !important;
+    width: 100% !important;
+    background-image: url(../images/ico/chevron-left.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ico {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &--shopping-bag {
+        background-image: url(../images/ico/shopping-bag.png);
+    }
+
+    &--heart {
+        background-image: url(../images/ico/heart.png);
+    }
+
+    &--user {
+        background-image: url(../images/ico/user.png);
+    }
+
+    &--search {
+        background-image: url(../images/ico/search.png);
+    }
+
+}
+
+.screen-reader-response {
+    display: none;
+}
+
+.font_bold {
+    font-weight: bold;
+}
+
+.inner-title {
+    @include title();
+    color: $color-primary;
+
+    @media screen and(max-width: $bp-MD) {
+        font-size: 30px;
+        line-height: 32px;
+    }
+}
+
+.inner-desc {
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: rgb(173, 173, 173);
+    font-size: 18px;
+}

@@ -15,50 +15,9 @@
     }
 }
 
-.inner-title {
-    @include title();
-    color: #839097;
-
-    @media screen and(max-width: $bp-MD) {
-        font-size: 30px;
-        line-height: 32px;
-    }
-}
-
-.inner-desc {
-    letter-spacing: 0.2px;
-    text-align: center;
-    color: rgb(173, 173, 173);
-    font-size: 18px;
-}
-
-.color-primary {
-    color: $color-primary !important;
-}
-
-.color-secondary {
-    color: $color-secondary !important;
-}
 
 .border-light {
     border: .5px solid rgb(228, 228, 228) !important;
-}
-
-.price {
-    font-size: 30px;
-    font-weight: bold;
-    color: $color-primary !important;
-
-    .total {
-        font-size: 25px;
-        margin-right: 30px;
-        font-weight: 500;
-    }
-
-    .sign {
-        font-size: 15px;
-        font-weight: 500;
-    }
 }
 
 .img-70 {
@@ -71,40 +30,18 @@
     border-radius: 50%;
 }
 
-.container--max {
-    padding: 0 80px;
-
-    @media screen and(max-width: 992px) {
-        padding: 0 40px;
-    }
-
-    @media screen and(max-width: 768px) {
-        padding: 0 20px;
-    }
+// Text colors
+.color-primary {
+    color: $color-primary !important;
 }
 
-.chevron-right {
-    height: 100% !important;
-    width: 100% !important;
-    background-image: url(../images/ico/chevron-right.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.color-secondary {
+    color: $color-secondary !important;
+}
+.color-gray-100{
+    color: $gray-100 !important;
 }
 
-.chevron-left {
-    height: 100% !important;
-    width: 100% !important;
-    background-image: url(../images/ico/chevron-left.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.color-gray-200, .color-light{
+    color: $gray-200 !important;
 }
-
-.screen-reader-response{
-    display:none;
-}
-
-.font_bold{
-    font-weight: bold;
-  }

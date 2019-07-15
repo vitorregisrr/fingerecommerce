@@ -2,9 +2,10 @@
     height: auto;
     display: flex;
     flex-direction: column;
-
+    border-bottom: 1px solid rgb(196, 196, 196);
+    
     &__announ {
-        padding: 10px 0;
+        padding: 15px 0;
         background-color: black;
         color: #e1e1e1;
 
@@ -22,11 +23,12 @@
             padding: 0 10px;
             margin: 0;
             font-size: 14px;
-            font-weight: 400;
+            font-weight: 300;
             display: inline;
-            
+
             @media screen and (max-width: $bp-MD) {
                 text-align: center;
+                font-size: 15px;
             }
 
             &:not(:last-child) {
@@ -34,21 +36,134 @@
 
                 @media screen and (max-width: $bp-MD) {
                     margin-bottom: 5px;
+                    border: none;
                 }
             }
         }
     }
 
-    &__tools{
+    &__tools {
         width: 100%;
         height: auto;
         background-color: #fff;
-        padding: 20px 0;
-        
-        .container-fluid{
+        padding: 20px 30px;
+
+        @media screen and (max-width: $bp-LG){
+            display: none;
+        }
+
+        .container-fluid {
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+
+        &__brand {
+            display: flex;
+            justify-content: center;
+            width: 33%;
+
+            img {
+                width: 230px;
+            }
+        }
+
+        &__search {
+            width: 33%;
+
+            &__content {
+                position: relative;
+                width: 55%;
+
+                input {
+                    width: 100%;
+                    border: none;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.405);
+                    color: rgba(0, 0, 0, 0.405);
+                    background-color: transparent;
+                    font-size: 13px;
+                    padding-bottom: 5px;
+                    @include transition();
+
+                    &::placeholder {
+                        color: rgba(0, 0, 0, 0.405);
+                    }
+
+                    &:hover,
+                    &:active {
+                        color: rgba(0, 0, 0, 0.75);
+                        border-color: rgba(0, 0, 0, 0.75);
+                    }
+                }
+
+            }
+
+            button {
+                position: absolute;
+                right: -25px;
+                top: 9px;
+                font-size: 13px;
+                background-color: transparent;
+                border: none;
+                width: 17px;
+                height: 17px;
+                background-image: url(../images/ico/search.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+                @include transition();
+
+                &:hover {
+                    @include scale(1.1);
+                }
+
+            }
+        }
+        
+        &__icons {
+            display: flex;
+            width: 33%;
+            justify-content: flex-end;
+
+            &__item{
+                position: relative;
+                width: 19px;
+                height: 19px;    
+                padding: 0;
+                background-color: transparent;
+                border: none;
+                @include transition();
+
+                &:hover{
+                    cursor: pointer;
+                    @include scale(1.1);
+                }
+
+                &:not(:last-child){
+                    margin-right: 37px;
+                }
+
+                &.chart{
+                    width: 16px;
+                    height: 16px;
+
+                    span.number{
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        top: -5px;
+                        right: -5px;
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 50%;
+                        color: #fff;
+                        background-color: $color-secondary;
+                        font-size: 8px;
+
+                    }
+                }
+            }
         }
     }
 }

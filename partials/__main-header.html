@@ -1,30 +1,36 @@
 <header id="main-header" class="main-header">
-    <div class="main-header__announ">
+    <div class="main-header__announ wow fadeInDown">
         <div class="container">
-            <h5 class="main-header__announ__text">Frete com 50% de desconto em compras acima de R$ 150,00</h5>
-            <h5 class="main-header__announ__text">Frete grátis nas compras acima de R$ 300,00 </h5>
+            <h5 class="main-header__announ__text wow fadeIn">Frete com 50% de desconto em compras acima de R$ 150,00
+            </h5>
+            <h5 class="main-header__announ__text wow fadeIn">Frete grátis nas compras acima de R$ 300,00 </h5>
         </div>
     </div>
     <div class="main-header__tools">
         <div class="container-fluid">
-            <form class="main-header__tools__search">
-                <input type="text" name="search">
-                <button type="submit"></button>
-            </form>
-
-            <div class="main-header__brand">
-                <img src="../brands/finger.png" alt="">
+            <div class="main-header__tools__search wow fadeInLeft">
+                <form action="" class="main-header__tools__search__content">
+                    <input type="text" name="search" placeholder="Buscar" autocomplete="off">
+                    <button type="submit"></button>
+                </form>
             </div>
 
-            <div class="main-header__tools__icons">
-                <a class="main-header__tools__icons__item">
-                    <i class="fa fa-hearth"></i>
+            <div class="main-header__tools__brand wow fadeInDown">
+                <a href="./index.html">
+                    <img src="../images/brands/finger.png" alt="Logo Finger">
                 </a>
-                <button id="toggleChartBtn " class="main-header__tools__icons__item">
-                    <i class="fa fa-chart"></i>
+            </div>
+
+            <div class="main-header__tools__icons wow fadeInRight">
+                <a class="main-header__tools__icons__item">
+                    <span class="ico ico--heart" aria-hidden="true"></span>
+                </a>
+                <button id="toggleChartBtn" class="main-header__tools__icons__item chart">
+                    <span class="ico ico--shopping-bag"></span>
+                    <span class="number">5</span>
                 </button>
                 <a class="main-header__tools__icons__item">
-                    <i class="fa fa-user"></i>
+                    <span class="ico ico--user" aria-hidden="true"></span>
                 </a>
             </div>
         </div>
@@ -32,12 +38,151 @@
     <nav id="main-nav" class="main-header__nav main-nav">
         <div class="container">
             <ul class="main-nav__list">
-                <li class="main-nav__list__item git"><a href="./ofertas.html">Ofertas</a></li>
-                <li class="main-nav__list__item git"><a href="./novidades.html">Novidades</a></li>
-                <li class="main-nav__list__item git"><a href="./produtos.html">Produtos</a></li>
-                <li class="main-nav__list__item git"><a href="./masculino.html">Masculino</a></li>
-                <li class="main-nav__list__item git"><a href="./nossaspecas.html">Nossas peças</a></li>
+                <li class="main-nav__list__item warning"><a href="./ofertas.html">Ofertas</a></li>
+                <li class="main-nav__list__item "><a href="./novidades.html">Novidades</a></li>
+                <li class="main-nav__list__item "><a href="./produtos.html">Produtos</a></li>
+                <li class="main-nav__list__item "><a href="./masculino.html">Masculino</a></li>
+                <li class="main-nav__list__item "><a href="./nossaspecas.html">Nossas peças</a></li>
             </ul>
         </div>
-     </nav>
+    </nav>
+</header>
+
+<header id="header-mobile" class="mobile-header">
+    <div class="mobile-header__header">
+        <div class="container">
+            <div class="mobile-header__header__toggler">
+                <button id="mobile-menu-toggler" class="mobile-header__header__toggler__button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="mobile-header__header__brand">
+                <a href="./index.html">
+                    <img src="../images/brands/finger.png" alt="Logo Finger">
+                </a>
+            </div>
+
+            <div class="mobile-header__header__search">
+                <button id="mobile-search-toggler" class="mobile-header__header__search__button">
+                    <span class="ico ico--search"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="mobile-menu" class="mobile-header__menu">
+        <ul class="mobile-header__menu__list">
+            <li class="dropdown">
+                <a id="mobile-header-collapse1" class="mobile-header__menu__list__item" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="ico ico--tshirt"></span> Roupas
+                </a>
+                <div class="dropdown-menu" aria-labelledby="mobile-header-collapse1">
+                    <a class="dropdown-item" href="./item1.html"> <span class="ico"></span> Item 1</a>
+                    <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Item 2</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a id="mobile-header-collapse2" class="mobile-header__menu__list__item" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="ico ico--jewel"></span> Semijoias
+                </a>
+                <div class="dropdown-menu" aria-labelledby="mobile-header-collapse2">
+                    <a class="dropdown-item" href="./item1.html"> <span class="ico"></span> Ofertas</a>
+                    <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Novidades</a>
+                    <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Produtos</a>
+
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a id="mobile-header-collapse3" class="mobile-header__menu__list__item" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="ico ico--dots"></span> Outros
+                </a>
+                <div class="dropdown-menu" aria-labelledby="mobile-header-collapse3">
+                    <a class="dropdown-item" href="./item1.html"> <span class="ico"></span> Sobre nós</a>
+                    <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Nossas peças</a>
+                    <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Formas de pagamento</a>
+                    <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Garantia</a>
+                    <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Devolução e troca</a>
+                    <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Perguntas frequentes</a>
+                    <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Fale conosco</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div id="mobile-search" class="mobile-header__search">
+        <input class="mobile-header__search__input" type="text" placeholder="Buscar...">
+
+        </input>
+        <div class="mobile-header__search__termos">
+            <h3 class="mobile-header__search__termos__title">Termos mais buscados</h3>
+            <ul>
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>1</span> Pingente
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>2</span> Anel
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>3</span> Pulseira
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>4</span> Brinco
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>5</span> Pingente Life
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>6</span> Pulseira Life
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>7</span> Pérolas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>8</span> Relógio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>9</span> Aneis
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>10</span> Rose
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </header>

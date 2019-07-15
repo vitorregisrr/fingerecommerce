@@ -1,0 +1,214 @@
+.mobile-header {
+    width: 100vw;
+    height: auto;
+    z-index: 10;
+
+    @media screen and (min-width: $bp-LG) {
+        display: none;
+    }
+
+    &.active{
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    &__header {
+        padding: 30px 0;
+        background-color: #fff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__brand {
+            width: 33%;
+            height: 40px;
+
+            img {
+                object-fit: contain;
+                object-position: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__toggler {
+            display: flex;
+            width: 33%;
+
+            &__button {
+                background-color: transparent;
+                border: none;
+                width: 35px;
+
+                span {
+                    display: block;
+                    width: 100%;
+                    height: 2.2px;
+                    background-color: black;
+                    border-radius: 300px;
+
+                    &:not(:last-child) {
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+        }
+
+
+        &__search {
+            display: flex;
+            justify-content: flex-end;
+            width: 33%;
+
+            &__button {
+                background-color: transparent;
+                border: none;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    &__menu {
+        width: 100%;
+        max-height: 0;
+        min-height: 0;
+        opacity: 0;
+        background-color: #fff;
+        overflow: hidden;
+        @include transition();
+
+        &.active {
+            min-height: 100vh;
+            max-height: 2000px;
+            opacity: 1;
+        }
+
+        li {
+            padding: 15px 35px;
+            width: 100%;
+            background-color: #fff;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+
+            &:after {
+                content: '';
+                position: absolute;
+                right: 20px;
+                top: 30px;
+                width: 40px;
+                height: 40px;
+                background-image: url(../images/ico/chevron-right.png);
+                background-size: contain;
+            }
+
+            .mobile-header__menu__list__item,
+            .dropdown-item {
+                display: flex;
+                align-items: center;
+                color: black;
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: 400;
+                padding: 0;
+                cursor: pointer;
+                @include transition();
+
+                &.active {
+                    color: $color-secondary;
+                }
+
+                .ico {
+                    width: 50px;
+                    height: 50px;
+                    display: inline-block;
+                }
+            }
+
+            &.show {
+                .mobile-header__menu__list__item {
+                    color: $color-secondary;
+                }
+            }
+
+            .dropdown-menu {
+                position: relative !important;
+                top: 0;
+                left: 0;
+                width: 100%;
+                float: unset;
+                transform: none !important;
+                border: none !important;
+                max-height: 0;
+                @include transition();
+
+                &.show {
+                    max-height: 1000px;
+                }
+
+            }
+        }
+    }
+
+    &__search{
+        width: 100%;
+        max-height: 0;
+        min-height: 0;
+        opacity: 0;
+        background-color: #fff;
+        overflow: hidden;
+        padding: 0;
+        @include transition();
+        
+        &.active {
+            padding-bottom: 30px;
+            min-height: 100vh;
+            max-height: 2000px;
+            opacity: 1;
+        }
+
+        &__input{
+            padding: 30px 33px;
+            border: none;
+            width: 100%;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+            color: black;
+            font-size: 17px;
+            background-color: transparent;
+            margin-bottom: 20px;
+        }
+
+        &__termos{
+            padding: 15px 25px;
+
+            &__title{
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 17px;
+                letter-spacing: -0.4;
+                margin-bottom: 30px;
+            }
+
+            &__item{
+                display: flex;
+                align-items: center;
+                font-size: 17px;
+                color: black;
+                text-transform: capitalize;
+                margin-bottom: 15px;
+                font-weight: 500;
+
+                span{
+                    margin-right: 15px;
+                    background-color: black;
+                    padding: 6px 12px;
+                    font-size: 16px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
