@@ -942,6 +942,25 @@ textarea.form-control {
   height: auto;
 }
 
+.custom-list li {
+  position: relative;
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.custom-list li:after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: -20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+
 .scroll-top {
   position: absolute;
   right: 130px;
@@ -1797,7 +1816,7 @@ textarea.form-control {
 }
 
 .nossas-pecas__item__caption__desc {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 body {

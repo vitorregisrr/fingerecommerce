@@ -1,0 +1,20 @@
+.custom-list{
+    li{
+        position: relative;
+        display: block;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 8px;
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: -20px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: black;
+        }
+    }
+}
