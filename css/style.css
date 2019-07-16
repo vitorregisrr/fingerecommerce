@@ -39,7 +39,7 @@
 }
 
 .color-primary {
-  color: #272727 !important;
+  color: #1b1b1b !important;
 }
 
 .color-secondary {
@@ -231,7 +231,7 @@ input:focus {
 
 .owl-carousel.nav-center .owl-nav button {
   position: absolute;
-  color: #272727 !important;
+  color: #1b1b1b !important;
   font-size: 40px !important;
   width: 90px;
   height: 70px;
@@ -408,7 +408,11 @@ input:focus {
   text-transform: uppercase;
   letter-spacing: -1px;
   text-align: center;
-  color: #272727;
+  color: #1b1b1b;
+}
+
+.inner-title.lg {
+  font-size: 40px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1032,7 +1036,7 @@ textarea.form-control {
 
 .btn-primary {
   min-height: 40px;
-  background-color: #272727 !important;
+  background-color: #1b1b1b !important;
   border: none;
   color: #fff;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1052,11 +1056,11 @@ textarea.form-control {
 
 .btn-primary--outline {
   background-color: transparent;
-  border: 1px solid #272727;
+  border: 1px solid #1b1b1b;
 }
 
 .btn-primary--outline:hover {
-  background-color: #272727;
+  background-color: #1b1b1b;
   color: #fff !important;
 }
 
@@ -1779,6 +1783,67 @@ textarea.form-control {
   font-size: 16px;
   color: #a5a5a5;
   margin-top: 20px;
+}
+
+.faq__item {
+  margin-bottom: 40px;
+}
+
+.faq__item__header {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  padding: 20px;
+  background-color: black;
+  margin-bottom: 15px;
+}
+
+.faq__item__links {
+  padding-left: 10px;
+}
+
+.faq__item__links li {
+  margin-bottom: 6px;
+}
+
+.faq__item__links li a {
+  font-weight: 500;
+  letter-spacing: .9px;
+}
+
+.faq__item__collapse {
+  padding: 20px;
+  background-color: #EEEEEE;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq__item__collapse__button {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq__item__collapse__button:hover, .faq__item__collapse__button[aria-expanded="true"] {
+  text-shadow: .2px .2px .2px black;
+}
+
+.faq__item__collapse__content {
+  padding-top: 34px;
+  padding-bottom: 20px;
 }
 
 .nossas-pecas__item {

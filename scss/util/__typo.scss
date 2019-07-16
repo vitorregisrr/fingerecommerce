@@ -54,6 +54,10 @@
     @include title();
     color: $color-primary;
 
+    &.lg{
+        font-size: 40px;
+    }
+
     @media screen and(max-width: $bp-MD) {
         font-size: 30px;
         line-height: 32px;
