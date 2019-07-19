@@ -4,7 +4,7 @@
 <head>
   <!-- partial:../partials/__head.html -->
 
-  <meta charset="UTF-8">
+                                                                    <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Finger</title>
@@ -46,6 +46,7 @@
   <!-- Custom JS -->
   <script src="../js/main.js" defer></script>
   <script src="../js/carousels.js" defer></script>
+  <script src="../js/chart.js" defer></script>
   <script src="../js/responsivenav.js" defer></script>
   <script src="../js/inputmasks.js" defer></script>
 
@@ -56,200 +57,204 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../css/style.css">
 
-  <!-- partial -->
+                                                                  <!-- partial -->
 </head>
 
 <body class=" wow fadeIn">
   <!-- partial:../partials/__main-header.html -->
 
+  
+
   <header id="main-header" class="main-header">
     <div class="main-header__announ wow fadeInDown">
-      <div class="container">
-        <h5 class="main-header__announ__text wow fadeIn">Frete com 50% de desconto em compras acima de R$ 150,00
-        </h5>
-        <h5 class="main-header__announ__text wow fadeIn">Frete grátis nas compras acima de R$ 300,00 </h5>
-      </div>
+        <div class="container">
+            <h5 class="main-header__announ__text wow fadeIn">Frete com 50% de desconto em compras acima de R$ 150,00
+            </h5>
+            <h5 class="main-header__announ__text wow fadeIn">Frete grátis nas compras acima de R$ 300,00 </h5>
+        </div>
     </div>
     <div class="main-header__tools">
-      <div class="container-fluid">
-        <div class="main-header__tools__search wow fadeInLeft">
-          <form action="" class="main-header__tools__search__content">
-            <input type="text" name="search" placeholder="Buscar" autocomplete="off">
-            <button type="submit"></button>
-          </form>
-        </div>
+        <div class="container-fluid">
+            <div class="main-header__tools__search wow fadeInLeft">
+                <form action="" class="main-header__tools__search__content">
+                    <input type="text" name="search" placeholder="Buscar" autocomplete="off">
+                    <button type="submit"></button>
+                </form>
+            </div>
 
-        <div class="main-header__tools__brand wow fadeInDown">
-          <a href="./index.html">
-            <img src="../images/brands/finger.png" alt="Logo Finger">
-          </a>
-        </div>
+            <div class="main-header__tools__brand wow fadeInDown">
+                <a href="./index.html">
+                    <img src="../images/brands/finger.png" alt="Logo Finger">
+                </a>
+            </div>
 
-        <div class="main-header__tools__icons wow fadeInRight">
-          <a class="main-header__tools__icons__item">
-            <span class="ico ico--heart" aria-hidden="true"></span>
-          </a>
-          <button id="toggleChartBtn" class="main-header__tools__icons__item chart">
-            <span class="ico ico--shopping-bag"></span>
-            <span class="number">5</span>
-          </button>
-          <a class="main-header__tools__icons__item">
-            <span class="ico ico--user" aria-hidden="true"></span>
-          </a>
+            <div class="main-header__tools__icons wow fadeInRight">
+                <a class="main-header__tools__icons__item">
+                    <span class="ico ico--heart" aria-hidden="true"></span>
+                </a>
+                <button id="openChartBtn" class="main-header__tools__icons__item nav-chart">
+                    <span class="ico ico--shopping-bag"></span>
+                    <span class="number">5</span>
+                </button>
+                <a class="main-header__tools__icons__item">
+                    <span class="ico ico--user" aria-hidden="true"></span>
+                </a>
+            </div>
         </div>
-      </div>
     </div>
     <nav id="main-nav" class="main-header__nav main-nav">
-      <div class="container">
-        <ul class="main-nav__list">
-          <li class="main-nav__list__item warning"><a href="./ofertas.html">Ofertas</a></li>
-          <li class="main-nav__list__item "><a href="./novidades.html">Novidades</a></li>
-          <li class="main-nav__list__item "><a href="./produtos.html">Produtos</a></li>
-          <li class="main-nav__list__item "><a href="./masculino.html">Masculino</a></li>
-          <li class="main-nav__list__item "><a href="./nossaspecas.html">Nossas peças</a></li>
-        </ul>
-      </div>
+        <div class="container">
+            <ul class="main-nav__list">
+                <li class="main-nav__list__item warning"><a href="./ofertas.html">Ofertas</a></li>
+                <li class="main-nav__list__item "><a href="./novidades.html">Novidades</a></li>
+                <li class="main-nav__list__item "><a href="./produtos.html">Produtos</a></li>
+                <li class="main-nav__list__item "><a href="./masculino.html">Masculino</a></li>
+                <li class="main-nav__list__item "><a href="./nossas-pecas.html">Nossas peças</a></li>
+            </ul>
+        </div>
     </nav>
-  </header>
+</header>
 
-  <header id="header-mobile" class="mobile-header">
+<header id="header-mobile" class="mobile-header">
     <div class="mobile-header__header">
-      <div class="container">
-        <div class="mobile-header__header__toggler">
-          <button id="mobile-menu-toggler" class="mobile-header__header__toggler__button">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
+        <div class="container">
+            <div class="mobile-header__header__toggler">
+                <button id="mobile-menu-toggler" class="mobile-header__header__toggler__button" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
 
-        <div class="mobile-header__header__brand">
-          <a href="./index.html">
-            <img src="../images/brands/finger.png" alt="Logo Finger">
-          </a>
-        </div>
+            <div class="mobile-header__header__brand">
+                <a href="./index.html">
+                    <img src="../images/brands/finger.png" alt="Logo Finger">
+                </a>
+            </div>
 
-        <div class="mobile-header__header__search">
-          <button id="mobile-search-toggler" class="mobile-header__header__search__button">
-            <span class="ico ico--search"></span>
-          </button>
+            <div class="mobile-header__header__search">
+                <button id="mobile-search-toggler" class="mobile-header__header__search__button">
+                    <span class="ico ico--search"></span>
+                </button>
+            </div>
         </div>
-      </div>
     </div>
     <div id="mobile-menu" class="mobile-header__menu">
-      <ul class="mobile-header__menu__list">
-        <li class="dropdown">
-          <a id="mobile-header-collapse1" class="mobile-header__menu__list__item" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <span class="ico ico--tshirt"></span> Roupas
-          </a>
-          <div class="dropdown-menu" aria-labelledby="mobile-header-collapse1">
-            <a class="dropdown-item" href="./item1.html"> <span class="ico"></span> Item 1</a>
-            <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Item 2</a>
-          </div>
-        </li>
+        <ul class="mobile-header__menu__list">
+            <li class="dropdown">
+                <a id="mobile-header-collapse1" class="mobile-header__menu__list__item" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="ico ico--tshirt"></span> Roupas
+                </a>
+                <div class="dropdown-menu" aria-labelledby="mobile-header-collapse1">
+                    <a class="dropdown-item" href="./item1.html"> <span class="ico"></span> Item 1</a>
+                    <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Item 2</a>
+                </div>
+            </li>
 
-        <li class="dropdown">
-          <a id="mobile-header-collapse2" class="mobile-header__menu__list__item" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <span class="ico ico--jewel"></span> Semijoias
-          </a>
-          <div class="dropdown-menu" aria-labelledby="mobile-header-collapse2">
-            <a class="dropdown-item" href="./item1.html"> <span class="ico"></span> Ofertas</a>
-            <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Novidades</a>
-            <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Produtos</a>
+            <li class="dropdown">
+                <a id="mobile-header-collapse2" class="mobile-header__menu__list__item" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="ico ico--jewel"></span> Semijoias
+                </a>
+                <div class="dropdown-menu" aria-labelledby="mobile-header-collapse2">
+                    <a class="dropdown-item" href="./item1.html"> <span class="ico"></span> Ofertas</a>
+                    <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Novidades</a>
+                    <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Produtos</a>
 
-          </div>
-        </li>
+                </div>
+            </li>
 
-        <li class="dropdown">
-          <a id="mobile-header-collapse3" class="mobile-header__menu__list__item" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <span class="ico ico--dots"></span> Outros
-          </a>
-          <div class="dropdown-menu" aria-labelledby="mobile-header-collapse3">
-            <a class="dropdown-item" href="./item1.html"> <span class="ico"></span> Sobre nós</a>
-            <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Nossas peças</a>
-            <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Formas de pagamento</a>
-            <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Garantia</a>
-            <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Devolução e troca</a>
-            <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Perguntas frequentes</a>
-            <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Fale conosco</a>
-          </div>
-        </li>
-      </ul>
+            <li class="dropdown">
+                <a id="mobile-header-collapse3" class="mobile-header__menu__list__item" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="ico ico--dots"></span> Outros
+                </a>
+                <div class="dropdown-menu" aria-labelledby="mobile-header-collapse3">
+                    <a class="dropdown-item" href="./item1.html"> <span class="ico"></span> Sobre nós</a>
+                    <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Nossas peças</a>
+                    <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Formas de pagamento</a>
+                    <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Garantia</a>
+                    <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Devolução e troca</a>
+                    <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Perguntas frequentes</a>
+                    <a class="dropdown-item" href="./item2.html"> <span class="ico"></span> Fale conosco</a>
+                </div>
+            </li>
+        </ul>
     </div>
 
     <div id="mobile-search" class="mobile-header__search">
-      <input class="mobile-header__search__input" type="text" placeholder="Buscar...">
+        <input class="mobile-header__search__input" type="text" placeholder="Buscar...">
 
-      </input>
-      <div class="mobile-header__search__termos">
-        <h3 class="mobile-header__search__termos__title">Termos mais buscados</h3>
-        <ul>
-          <li>
-            <a href="" class="mobile-header__search__termos__item">
-              <span>1</span> Pingente
-            </a>
-          </li>
+        </input>
+        <div class="mobile-header__search__termos">
+            <h3 class="mobile-header__search__termos__title">Termos mais buscados</h3>
+            <ul>
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>1</span> Pingente
+                    </a>
+                </li>
 
-          <li>
-            <a href="" class="mobile-header__search__termos__item">
-              <span>2</span> Anel
-            </a>
-          </li>
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>2</span> Anel
+                    </a>
+                </li>
 
-          <li>
-            <a href="" class="mobile-header__search__termos__item">
-              <span>3</span> Pulseira
-            </a>
-          </li>
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>3</span> Pulseira
+                    </a>
+                </li>
 
-          <li>
-            <a href="" class="mobile-header__search__termos__item">
-              <span>4</span> Brinco
-            </a>
-          </li>
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>4</span> Brinco
+                    </a>
+                </li>
 
-          <li>
-            <a href="" class="mobile-header__search__termos__item">
-              <span>5</span> Pingente Life
-            </a>
-          </li>
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>5</span> Pingente Life
+                    </a>
+                </li>
 
-          <li>
-            <a href="" class="mobile-header__search__termos__item">
-              <span>6</span> Pulseira Life
-            </a>
-          </li>
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>6</span> Pulseira Life
+                    </a>
+                </li>
 
-          <li>
-            <a href="" class="mobile-header__search__termos__item">
-              <span>7</span> Pérolas
-            </a>
-          </li>
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>7</span> Pérolas
+                    </a>
+                </li>
 
-          <li>
-            <a href="" class="mobile-header__search__termos__item">
-              <span>8</span> Relógio
-            </a>
-          </li>
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>8</span> Relógio
+                    </a>
+                </li>
 
-          <li>
-            <a href="" class="mobile-header__search__termos__item">
-              <span>9</span> Aneis
-            </a>
-          </li>
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>9</span> Aneis
+                    </a>
+                </li>
 
-          <li>
-            <a href="" class="mobile-header__search__termos__item">
-              <span>10</span> Rose
-            </a>
-          </li>
-        </ul>
-      </div>
+                <li>
+                    <a href="" class="mobile-header__search__termos__item">
+                        <span>10</span> Rose
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </header>
+</header>
+
+  
 
   <!-- partial -->
 
@@ -356,100 +361,207 @@
 
   <!-- partial:../partials/__main-footer.html -->
 
-  <footer id="main-footer" class="main-footer">
+  <div id="main-backdrop" class="backdrop"></div>
+<footer id="main-footer" class="main-footer">
     <div class="main-footer__info">
-      <div class="container">
-        <div class="main-footer__info__newsletter">
-          <h3 class="main-footer__title mb-5  wow fadeInUp">
-            Newsletter
-          </h3>
+        <div class="container">
+            <div class="main-footer__info__newsletter">
+                <h3 class="main-footer__title mb-5  wow fadeInUp">
+                    Newsletter
+                </h3>
 
-          <form action="" class="main-footer__info__newsletter__form  wow fadeInUp">
-            <input type="text" placeholder="Cadastre seu e-mail">
-            <button type="submit">Assinar <i class="ml-4 fa fa-chevron-right" aria-hidden="true"></i></button>
-          </form>
-          <a href="./politicaprivacidade.html" class="main-footer__info__newsletter__privacy wow faedInUp">Consulte
-            nossa
-            Politíca de Privacidade</a>
+                <form action="" class="main-footer__info__newsletter__form  wow fadeInUp">
+                    <input type="text" placeholder="Cadastre seu e-mail">
+                    <button type="submit">Assinar <i class="ml-4 fa fa-chevron-right" aria-hidden="true"></i></button>
+                </form>
+                <a href="./politicaprivacidade.html"
+                    class="main-footer__info__newsletter__privacy wow faedInUp">Consulte nossa
+                    Politíca de Privacidade</a>
+            </div>
+
+            <div class="main-footer__info__links">
+                <div class="row">
+                    <div class="col-lg-4 main-footer__info__links__brand wow fadeInUp">
+                        <img src="../images/brands/finger-white.png" alt="">
+                    </div>
+
+                    <div class="col-lg-3 col-sm-4">
+                        <h4 class="main-footer__title wow fadeInUp mb-4">
+                            Navegação
+                        </h4>
+                        <div class="row">
+                            <div class="col-6 col-md-6">
+                                <ul class="main-footer__info__links__list wow fadeInUp">
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">Produtos</a></li>
+                                    <li><a href="">Novidades</a></li>
+                                    <li><a href="">Masculino</a></li>
+                                    <li><a href="">Nossas peças</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <ul class="main-footer__info__links__list wow fadeInUp">
+                                    <li><a href="">Acessórios</a></li>
+                                    <li><a href="">Ofertas</a></li>
+                                    <li><a href="">Sobre</a></li>
+                                    <li><a href="">Login</a></li>
+                                    <li><a href="">Carrinho</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-4">
+                        <h4 class="main-footer__title wow fadeInUp mb-4">
+                            Ajuda
+                        </h4>
+                        <ul class="main-footer__info__links__list wow fadeInUp">
+                            <li><a href="">Formas de Pagamento</a></li>
+                            <li><a href="">Garantia</a></li>
+                            <li><a href="">Devolução e Troca</a></li>
+                            <li><a href="">Perguntas Frequentes</a></li>
+                            <li><a href="">Fale Conosco</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-lg-3 col-sm-4">
+                        <h4 class="main-footer__title wow fadeInUp mb-4">
+                            Fique por dentro
+                        </h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="main-footer__info__links__social wow fadeInUp">
+                                    <li><a class="main-footer__info__links__social__item " href=""><i
+                                                class="fa fa-facebook-f"></i></a></li>
+                                    <li><a class="main-footer__info__links__social__item " href=""><i
+                                                class="fa fa-instagram"></i></a></li>
+                                    <li><a class="main-footer__info__links__social__item " href=""><i
+                                                class="fa fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-
-        <div class="main-footer__info__links">
-          <div class="row">
-            <div class="col-lg-4 main-footer__info__links__brand wow fadeInUp">
-              <img src="../images/brands/finger-white.png" alt="">
-            </div>
-
-            <div class="col-lg-3 col-sm-4">
-              <h4 class="main-footer__title wow fadeInUp mb-4">
-                Navegação
-              </h4>
-              <div class="row">
-                <div class="col-6 col-md-6">
-                  <ul class="main-footer__info__links__list wow fadeInUp">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Produtos</a></li>
-                    <li><a href="">Novidades</a></li>
-                    <li><a href="">Masculino</a></li>
-                    <li><a href="">Nossas peças</a></li>
-                  </ul>
-                </div>
-                <div class="col-6 col-md-6">
-                  <ul class="main-footer__info__links__list wow fadeInUp">
-                    <li><a href="">Acessórios</a></li>
-                    <li><a href="">Ofertas</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Login</a></li>
-                    <li><a href="">Carrinho</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-2 col-sm-4">
-              <h4 class="main-footer__title wow fadeInUp mb-4">
-                Ajuda
-              </h4>
-              <ul class="main-footer__info__links__list wow fadeInUp">
-                <li><a href="">Formas de Pagamento</a></li>
-                <li><a href="">Garantia</a></li>
-                <li><a href="">Devolução e Troca</a></li>
-                <li><a href="">Perguntas Frequentes</a></li>
-                <li><a href="">Fale Conosco</a></li>
-              </ul>
-            </div>
-
-
-            <div class="col-lg-3 col-sm-4">
-              <h4 class="main-footer__title wow fadeInUp mb-4">
-                Fique por dentro
-              </h4>
-              <div class="row">
-                <div class="col-md-6">
-                  <ul class="main-footer__info__links__social wow fadeInUp">
-                    <li><a class="main-footer__info__links__social__item " href=""><i class="fa fa-facebook-f"></i></a>
-                    </li>
-                    <li><a class="main-footer__info__links__social__item " href=""><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li><a class="main-footer__info__links__social__item " href=""><i class="fa fa-twitter"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="main-footer__copyright">
-      <div class="container-fluid">
-        <p class="wow fadeInUp">©2018 Skiny, Todos os direitos reservados</p>
-        <img class="wow fadeInUp" src="../images/brands/sorocabacom.png" alt="Logo Sorocabacom">
-      </div>
+        <div class="container-fluid">
+            <p class="wow fadeInUp">©2018 Skiny, Todos os direitos reservados</p>
+            <img class="wow fadeInUp" src="../images/brands/sorocabacom.png" alt="Logo Sorocabacom">
+        </div>
     </div>
-  </footer>
+</footer>
 
+  <!-- partial -->
+    <!-- partial:../partials/__chart.html -->
+  <div id="chart" class="chart">
+    <div class="chart__header">
+        <div class="chart__header__info">
+            <i class="fa fa-question-circle"></i>
+        </div>
+        <h4 class="chart__header__title">Carrinho(5)</h4>
+        <div class="chart__header__close">
+            <button type="button" id="closeChartBtn">
+                <i class="fa fa-close" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+    <div class="chart__warning">
+        Faltam R$ 0,10 para você ganhar frete <span class="text-uppercase">Grátis</span>
+    </div>
+    <div class="chart__products">
+        <div class="chart__products__item">
+            <a class="chart__products__item__remove" role="button" href="#"><i class="fa fa-close"></i></a>
+            <div class="chart__products__item__img">
+                <img src="../images/produtos/anelouro32d.png" alt="">
+            </div>
+            <div class="chart__products__item__caption">
+                <h2 class="chart__products__item__caption__title">Anel Solitário de Ouro com Topázio Azul redondo</h2>
+                <div class="chart__products__item__info">
+                    <span class="color-gray-100">Tam: Aro 22</span>
+                    <span class="color-gray-100">Cor: Dourado/Azul</span>
+                </div>
+                <div class="chart__products__item__quantity">
+                    <div>
+                        <a class="btn btn-primary--outline chart__products__item__quantity__control" role="button" href="#">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                        <span class="chart__products__item__quantity__number">1</span>
+                        <a class="btn btn-primary--outline chart__products__item__quantity__control" role="button" href="#">
+                            <i class="fa fa-minus"></i>
+                        </a>
+                    </div>
+
+                    <div>
+                        <span class="font-weight-bold">R$ 11.490,00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart__products__item">
+            <a class="chart__products__item__remove" role="button" href="#"><i class="fa fa-close"></i></a>
+            <div class="chart__products__item__img">
+                <img src="../images/produtos/anelouro32d.png" alt="">
+            </div>
+            <div class="chart__products__item__caption">
+                <h2 class="chart__products__item__caption__title">Anel Solitário de Ouro com Topázio Azul redondo</h2>
+                <div class="chart__products__item__info">
+                    <span class="color-gray-100">Tam: Aro 22</span>
+                    <span class="color-gray-100">Cor: Dourado/Azul</span>
+                </div>
+                <div class="chart__products__item__quantity d-flex">
+                    <div>
+                        <a class="chart__products__item__quantity__control btn btn-primary--outline" role="button" href="#">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                        <span class="chart__products__item__quantity__number">1</span>
+                        <a class="chart__products__item__quantity__control btn btn-primary--outline" role="button" href="#">
+                            <i class="fa fa-minus"></i>
+                        </a>
+                    </div>
+
+                    <div>
+                        <span class="font-weight-bold">R$ 11.490,00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="chart__bottom">
+        <div class="chart__bottom__item">
+            <div class="d-flex justify-content-between">
+                <div><span>Subtotal</span></div>
+                <div><span class="font-weight-bold">R$ 46.710,00</span></div>
+            </div>
+        </div>
+        <div class="chart__bottom__item bottom-cep">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <input class="mask-cep" type="text" placeholder="Digite seu CEP" value="13111-000">
+                </div>
+                <div>
+                    <span class="font-weight-bold">12,00</span>
+                </div>
+            </div>
+        </div>
+        <div class="chart__bottom__item">
+            <div class="d-flex justify-content-between">
+                <div><span>Total</span></div>
+                <div><span class="font-weight-bold">R$ 46.710,00</span></div>
+            </div>
+        </div>
+
+        <div class="chart__bottom__check-in">
+            <button class="btn btn-primary w-100 text-uppercase py-3 pb-3">Ir para o pagamento</button>
+        </div>
+    </div>
+</div>
   <!-- partial -->
   <button class="scroll-top"></button>
 </body>

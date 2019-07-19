@@ -603,12 +603,12 @@ input:focus {
   margin-right: 37px;
 }
 
-.main-header__tools__icons__item.chart {
+.main-header__tools__icons__item.nav-chart {
   width: 16px;
   height: 16px;
 }
 
-.main-header__tools__icons__item.chart span.number {
+.main-header__tools__icons__item.nav-chart span.number {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -946,6 +946,178 @@ textarea.form-control {
   height: auto;
 }
 
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.377);
+  pointer-events: none;
+}
+
+.backdrop.active {
+  opacity: 1;
+  z-index: 9;
+  pointer-events: all;
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: -150%;
+  top: 0;
+  width: 500px;
+  height: 100vh;
+  font-size: 15px;
+  opacity: 1;
+  z-index: 10;
+  background-color: #fff;
+  box-shadow: -2px -2px 40px rgba(0, 0, 0, 0.198);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 992px) {
+  .chart {
+    width: 100vw;
+  }
+}
+
+.chart.active {
+  opacity: 1;
+  right: 0;
+}
+
+.chart__products {
+  flex: 1 1 auto;
+  overflow-y: scroll;
+}
+
+.chart__products__item {
+  display: flex;
+  height: 140px;
+  padding: 16px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.086);
+}
+
+.chart__products__item__remove {
+  position: absolute;
+  right: -20px;
+  top: 10px;
+}
+
+.chart__products__item__caption {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.chart__products__item__caption__title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.chart__products__item__img {
+  padding: 20px;
+  object-position: left;
+  width: 30%;
+}
+
+.chart__products__item__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.chart__products__item__quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.chart__products__item__quantity__control {
+  padding: 7px 10px !important;
+  font-size: 9px !important;
+}
+
+.chart__products__item__quantity__number {
+  padding: 2px 8px;
+}
+
+.chart__products__item__info span {
+  font-size: 14px;
+}
+
+.chart__warning {
+  border-color: rgba(0, 0, 0, 0.086);
+  border-style: solid;
+  border-width: 2px 0;
+  padding: 15px 20px;
+  color: #D74F4F;
+}
+
+.chart__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.chart__header__info {
+  width: 33%;
+}
+
+.chart__header__title {
+  width: 33%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.chart__header__close {
+  width: 33%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chart__header__close button {
+  background-color: transparent;
+  border: none;
+}
+
+.chart__bottom {
+  padding-bottom: 10px;
+  margin-top: auto;
+}
+
+.chart__bottom__item {
+  padding: 10px 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.086);
+  font-size: 14px;
+}
+
+.chart__bottom__item:first-child {
+  border-top: 2px solid rgba(0, 0, 0, 0.086);
+}
+
+.chart__bottom__item.bottom-cep input {
+  border: none;
+}
+
+.chart__bottom__check-in {
+  margin-top: 7px;
+  padding: 10px 20px;
+}
+
 .custom-list li {
   position: relative;
   display: block;
@@ -963,6 +1135,160 @@ textarea.form-control {
   height: 10px;
   border-radius: 50%;
   background-color: black;
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: -150%;
+  top: 0;
+  width: 500px;
+  height: 100vh;
+  font-size: 15px;
+  opacity: 1;
+  z-index: 10;
+  background-color: #fff;
+  box-shadow: -2px -2px 40px rgba(0, 0, 0, 0.198);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 992px) {
+  .chart {
+    width: 100vw;
+  }
+}
+
+.chart.active {
+  opacity: 1;
+  right: 0;
+}
+
+.chart__products {
+  flex: 1 1 auto;
+  overflow-y: scroll;
+}
+
+.chart__products__item {
+  display: flex;
+  height: 140px;
+  padding: 16px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.086);
+}
+
+.chart__products__item__remove {
+  position: absolute;
+  right: -20px;
+  top: 10px;
+}
+
+.chart__products__item__caption {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.chart__products__item__caption__title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.chart__products__item__img {
+  padding: 20px;
+  object-position: left;
+  width: 30%;
+}
+
+.chart__products__item__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.chart__products__item__quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.chart__products__item__quantity__control {
+  padding: 7px 10px !important;
+  font-size: 9px !important;
+}
+
+.chart__products__item__quantity__number {
+  padding: 2px 8px;
+}
+
+.chart__products__item__info span {
+  font-size: 14px;
+}
+
+.chart__warning {
+  border-color: rgba(0, 0, 0, 0.086);
+  border-style: solid;
+  border-width: 2px 0;
+  padding: 15px 20px;
+  color: #D74F4F;
+}
+
+.chart__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.chart__header__info {
+  width: 33%;
+}
+
+.chart__header__title {
+  width: 33%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.chart__header__close {
+  width: 33%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chart__header__close button {
+  background-color: transparent;
+  border: none;
+}
+
+.chart__bottom {
+  padding-bottom: 10px;
+  margin-top: auto;
+}
+
+.chart__bottom__item {
+  padding: 10px 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.086);
+  font-size: 14px;
+}
+
+.chart__bottom__item:first-child {
+  border-top: 2px solid rgba(0, 0, 0, 0.086);
+}
+
+.chart__bottom__item.bottom-cep input {
+  border: none;
+}
+
+.chart__bottom__check-in {
+  margin-top: 7px;
+  padding: 10px 20px;
 }
 
 .scroll-top {
