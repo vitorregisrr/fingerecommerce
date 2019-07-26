@@ -398,8 +398,8 @@ input:focus {
   display: none;
 }
 
-.font_bold {
-  font-weight: bold;
+.font-weight-medium {
+  font-weight: 500;
 }
 
 .inner-title {
@@ -946,6 +946,89 @@ textarea.form-control {
   height: auto;
 }
 
+.table-main {
+  width: 100%;
+}
+
+.table-main select, .table-main input {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.table-main thead {
+  background-color: black;
+  color: #fff;
+  width: 100%;
+}
+
+.table-main thead select {
+  color: #fff;
+}
+
+.table-main thead th {
+  font-size: 14px;
+  padding: 15px;
+  font-weight: 500;
+}
+
+.table-main tbody {
+  width: 100%;
+  color: black;
+  font-size: 13px;
+}
+
+.table-main tbody select {
+  color: black;
+}
+
+.table-main tbody tr {
+  min-width: 100%;
+  border-bottom: 1.4px solid #5e5d5d;
+}
+
+.table-main tbody tr td {
+  padding: 20px;
+}
+
+.table-main tbody tr td:first-child {
+  width: 25%;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.user-panel-nav {
+  padding: 20px 0;
+}
+
+.user-panel-nav__item {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding: 20px 0;
+}
+
+.user-panel-nav__item i.fa {
+  font-size: 14px;
+}
+
+.user-panel-nav__item:not(:last-child) {
+  border-bottom: 1px solid #666666;
+}
+
+.user-panel-nav__item:after {
+  content: '\f054';
+  font-family: FontAwesome;
+  position: absolute;
+  font-size: 10px;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .backdrop {
   width: 100vw;
   height: 100vh;
@@ -997,20 +1080,23 @@ textarea.form-control {
 
 .chart__products {
   flex: 1 1 auto;
-  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .chart__products__item {
+  position: relative;
   display: flex;
+  width: 100%;
   height: 140px;
   padding: 16px 0;
-  padding-right: 15px;
+  padding-right: 30px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.086);
 }
 
 .chart__products__item__remove {
   position: absolute;
-  right: -20px;
+  font-size: 12px;
+  right: 15px;
   top: 10px;
 }
 
@@ -1171,20 +1257,23 @@ textarea.form-control {
 
 .chart__products {
   flex: 1 1 auto;
-  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .chart__products__item {
+  position: relative;
   display: flex;
+  width: 100%;
   height: 140px;
   padding: 16px 0;
-  padding-right: 15px;
+  padding-right: 30px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.086);
 }
 
 .chart__products__item__remove {
   position: absolute;
-  right: -20px;
+  font-size: 12px;
+  right: 15px;
   top: 10px;
 }
 

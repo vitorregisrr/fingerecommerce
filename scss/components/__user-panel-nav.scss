@@ -1,0 +1,28 @@
+.user-panel-nav{
+    padding: 20px 0;
+
+    &__item{
+        position: relative;
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+
+        i.fa{
+            font-size: 14px;
+        }
+
+        &:not(:last-child){
+            border-bottom: 1px solid rgb(102, 102, 102);
+        }
+
+        &:after{
+            content: '\f054';
+            font-family: FontAwesome;
+            position: absolute;
+            font-size: 10px;
+            right: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

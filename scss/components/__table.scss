@@ -1,0 +1,53 @@
+.table-main{
+    width: 100%;
+    
+    select, input{
+        background-color: transparent !important;
+        border: none !important;
+        outline: none !important;
+    }
+
+    thead{
+        background-color: black;
+        color: #fff;
+        width: 100%;
+
+        select{
+            color: #fff;
+        }
+        
+        th{
+            font-size: 14px;
+            padding: 15px;
+            font-weight: 500;
+        }
+    }
+
+    tbody{
+        width: 100%;
+        color: black;
+        font-size: 13px;
+
+        select{
+            color: black;
+        }
+
+        tr{
+            min-width: 100%;
+            border-bottom: 1.4px solid rgb(94, 93, 93);
+            
+            td{
+                padding: 20px;
+
+                &:first-child{
+                   width: 25%;
+                }
+            }
+        }
+    }
+}
+
+.table-responsive{
+    width: 100%;
+    overflow-x: auto;
+}

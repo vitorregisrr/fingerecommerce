@@ -36,5 +36,5 @@
 
     openChartBtn.click(chart.toggle);
     closeChartBtn.click(chart.toggle);
-    backdrop.click( chart.close);
+    backdrop.click(chart.close);
 })();
